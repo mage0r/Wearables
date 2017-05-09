@@ -1,0 +1,175 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wearables-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery BT1
+U 1 1 590EFD57
+P 1150 1250
+F 0 "BT1" H 1250 1300 50  0000 L CNN
+F 1 "Battery" H 1250 1200 50  0000 L CNN
+F 2 "libs:CR2032" V 1150 1290 50  0001 C CNN
+F 3 "" V 1150 1290 50  0000 C CNN
+	1    1150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SWITCH_INV SW1
+U 1 1 590EFE48
+P 1350 2650
+F 0 "SW1" H 1150 2800 50  0000 C CNN
+F 1 "ON|OFF" H 1200 2500 50  0000 C CNN
+F 2 "libs:SS12D00" H 1350 2650 50  0001 C CNN
+F 3 "" H 1350 2650 50  0000 C CNN
+	1    1350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 590EFF67
+P 2400 1650
+F 0 "D1" H 2400 1750 50  0000 C CNN
+F 1 "LED" H 2400 1550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 2400 1650 50  0001 C CNN
+F 3 "" H 2400 1650 50  0000 C CNN
+	1    2400 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 590EFFB0
+P 2400 1250
+F 0 "R1" V 2480 1250 50  0000 C CNN
+F 1 "R" V 2400 1250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2330 1250 50  0001 C CNN
+F 3 "" H 2400 1250 50  0000 C CNN
+	1    2400 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 590F020F
+P 1150 800
+F 0 "P2" H 1150 900 50  0000 C CNN
+F 1 "+" V 1250 800 50  0000 C CNN
+F 2 "Connect:1pin" H 1150 800 50  0001 C CNN
+F 3 "" H 1150 800 50  0000 C CNN
+	1    1150 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 590F0271
+P 1150 1700
+F 0 "P3" H 1150 1800 50  0000 C CNN
+F 1 "-" V 1250 1700 50  0000 C CNN
+F 2 "Connect:1pin" H 1150 1700 50  0001 C CNN
+F 3 "" H 1150 1700 50  0000 C CNN
+	1    1150 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 1100 1150 1000
+Wire Wire Line
+	1150 1500 1150 1400
+$Comp
+L CONN_01X01 P1
+U 1 1 590F03A6
+P 800 2400
+F 0 "P1" H 800 2500 50  0000 C CNN
+F 1 "+" V 900 2400 50  0000 C CNN
+F 2 "Connect:1pin" H 800 2400 50  0001 C CNN
+F 3 "" H 800 2400 50  0000 C CNN
+	1    800  2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 590F03FF
+P 1900 2300
+F 0 "P4" H 1900 2400 50  0000 C CNN
+F 1 "-" V 2000 2300 50  0000 C CNN
+F 2 "Connect:1pin" H 1900 2300 50  0001 C CNN
+F 3 "" H 1900 2300 50  0000 C CNN
+	1    1900 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 2550 1900 2550
+Wire Wire Line
+	1900 2550 1900 2500
+Wire Wire Line
+	850  2650 800  2650
+Wire Wire Line
+	800  2650 800  2600
+$Comp
+L CONN_01X01 P6
+U 1 1 590F07E3
+P 2400 2100
+F 0 "P6" H 2400 2200 50  0000 C CNN
+F 1 "-" V 2500 2100 50  0000 C CNN
+F 2 "Connect:1pin" H 2400 2100 50  0001 C CNN
+F 3 "" H 2400 2100 50  0000 C CNN
+	1    2400 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 590F0866
+P 2400 850
+F 0 "P5" H 2400 950 50  0000 C CNN
+F 1 "+" V 2500 850 50  0000 C CNN
+F 2 "Connect:1pin" H 2400 850 50  0001 C CNN
+F 3 "" H 2400 850 50  0000 C CNN
+	1    2400 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 1050 2400 1100
+Wire Wire Line
+	2400 1400 2400 1450
+Wire Wire Line
+	2400 1850 2400 1900
+NoConn ~ 1850 2750
+$EndSCHEMATC
